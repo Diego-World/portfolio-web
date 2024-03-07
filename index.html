@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Gouveia</title>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <!--Google Fonts-->
+    <!--bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--bootstrap icons-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the 'Sobre' link and the target section
+            var sobreLink = document.querySelector('nav.menu-desktop a[href="#sobre"]');
+            var sobreSection = document.querySelector('section.sobre');
+
+            // Add click event listener
+            sobreLink.addEventListener('click', function(e) {
+                e.preventDefault(); // Prevent the default link behavior
+
+                // Scroll to the 'Sobre' section with smooth behavior
+                sobreSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the 'Sobre' link and the target section
+            var portfolioLink = document.querySelector('nav.menu-desktop a[href="#portfolio"]');
+            var portfolioSection = document.querySelector('section.portfolio');
+
+            // Add click event listener
+            portfolioLink.addEventListener('click', function(e) {
+                e.preventDefault(); // Prevent the default link behavior
+
+                // Scroll to the 'Sobre' section with smooth behavior
+                portfolioSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+    
+    <video autoplay loop muted class="bg_video">
+        <source src="assets/background.mp4" type="video/mp4">
+    </video>
+
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="">
+                </a>
+            </div><!--Logotipo-->
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#portfolio">Projetos</a></li>
+                </ul>
+            </nav>
+            
+            <div class="btn-contato">
+                <a href="#">
+                    <button>Contato</button>
+                </a>
+            </div>
+
+        </div><!--interface-->
+    </header>
+
+    <!--Conteúdo principal da página-->
+    <main>
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>Seja<span> Bem vindo.</span></h1>
+                        <p>Olá, te convido a conhecer um pouco mais sobre minhas habilidades
+                            personalidade e projetos. Caso eu seja um match pra você, te convido
+                            a entrar em contato comigo!
+                        </p>
+
+                        <div class="btn-contato">
+                            <a href="#">
+                                <button>Entre em Contato</button>
+                            </a>
+                        </div>
+                    </div><!--txt-topo-site-->
+                    <div class="img-topo-site">
+                        <img src="assets/eu.png" alt="MinhaImagem">
+                    </div><!--img-topo-site-->
+                </div><!--flex-->
+            </div><!--Interface-->
+        </section><!--Topo-do-Site-->
+
+        <section class="especialidades">
+            <div class="interface">
+                <h2 class="titulo">Minhas <span>Especialidades</span></h2>
+                <div class="flex"> <!--Display flex tem o comportamento de caixa de elementos que competem espaço em uma div ou container-->
+                    <div class="especialidades-box">
+                        <i class="bi bi-code-square"></i>
+                        <h3>Back-end</h3>
+                        <p>Tenho o foco no desenvolvimento back-end utilizando
+                            a linguagem <span>Java</span> e o <span>Spring Framework</span>. Utilizo o <span>RabbitMQ</span>
+                            para mensageria e o <span>Azure</span> da Microsoft para serviços em nuvem. 
+                        </p>
+                    </div>
+                    <div class="especialidades-box">
+                        <i class="bi bi-database"></i>
+                        <h3>Banco de Dados</h3>
+                        <p>No mundo relacional gosto bastante do <span>SqlServer</span> por causa da boa
+                            integração que existe ao ecossistema
+                            Microsoft e sua robustez, e também o <span>PostgresSql</span>. Já em NoSql fico com o <span>MongoDB</span>.
+                        </p>
+                    </div>
+                    <div class="especialidades-box">
+                        <i class="bi bi-translate"></i>
+                        <h3>Inglês</h3>
+                        <p>O inglês é um idioma indispensável no mundo profissional, ainda
+                            mais em um mercado global como o da tecnologia. Desde muito novo sempre
+                            gostei de idiomas, <span>fiquei fluente no inglês aos 15 anos</span> e já tive experiências
+                            com atendimento a clientes norte-americanos em uma start-up.
+                        </p>
+                    </div>
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--especialidades-->
+
+        <section class="sobre" id="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="assets/eu.png" alt="self">
+                    </div>
+                    <div class="txt-sobre">
+                        <h2>Muito prazer, <span>sou Diego Gouveia</span></h2>
+                        <p>Sou um programador, patriacar da familia Gouveia, dono de terras, sal da terra e inimigo da promiscuidade,
+                            Sou um programador, patriacar da familia Gouveia, dono de terras, sal da terra e inimigo da promiscuidade</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis necessitatibus ea tempora saepe, similique repellendus ab alias eaque dignissimos 
+                            dolores nesciunt quam deleniti nisi, suscipit hic dicta! Incidunt, facere ad.</p>
+
+                            <div class="btn-social">
+                                <a href="https://www.instagram.com/gouveiadesenvolvimento/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                                <a href="https://www.youtube.com/channel/UCOlYoGhpZiZTz5NgpB8g6JQ" target="_blank"><button><i class="bi bi-youtube"></i></button></a>
+                                <a href="https://www.linkedin.com/in/techdiegogouveia/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                            </div>
+                    </div>
+                </div>
+            </div> <!--Interface-->
+        </section> <!--sobre-->
+
+        <section class="portfolio" id="portfolio">
+            <div class="interface">
+                <h2 class="titulo">Meus <span>Projetos</span></h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(assets/eu.png);">
+                    <div class="overlay">Projeto 1</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(assets/eu.png);">
+                        <div class="overlay">Projeto 2</div></div>
+                    <div class="img-port" style="background-image: url(assets/eu.png);">
+                        <div class="overlay">Projeto 3</div>
+                    </div>
+                </div>
+            </div><!--interface-->
+        </section> <!--portfolio-->
+
+        <section class="formulario">
+            <div class="interface">
+                <h2 class="titulo">Fala <span>Comigo</span></h2>
+
+                <form action="">
+                     <input type="text" name="" id="" placeholder="Seu nome" required>
+                     <input type="text" name="" id="" placeholder="Seu email" required>
+                     <input type="text" name="" id="" placeholder="Seu celular">
+                     <textarea name="" id="" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
+                     <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <h2 class="titulo">Desenvolvendo o <span>futuro!</span></h2>
+                    </div>
+                    <div class="btn-social">
+                        <a href="https://www.instagram.com/gouveiadesenvolvimento/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="https://www.youtube.com/channel/UCOlYoGhpZiZTz5NgpB8g6JQ" target="_blank"><button><i class="bi bi-youtube"></i></button></a>
+                        <a href="https://www.linkedin.com/in/techdiegogouveia/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                    </div><!--btn-social-->
+                </div><!--line-footer-->
+            </div>
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope"></i><a href="mailto:social.diegogouveia@gmail.com">social.diegogouveia@gmail.com</a></p>
+            </div><!--line-footer-->
+
+            </div><!--line-footer-->
+        </div><!--interface-->
+    </footer>
+
+</body>
+</html>
