@@ -133,6 +133,7 @@ section.topo-do-site .flex{
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
     width: 95%;
+    border-radius: 75px;
 }
 
 @keyframes flutuar{
@@ -213,6 +214,13 @@ section.sobre .flex{
     text-align: justify;
 }
 
+.sobre .flex .img-sobre img{
+    position: relative;
+    width: 100%;
+}
+
+
+
 /* Estilo do portfólio */
 
 section.portfolio{
@@ -227,10 +235,10 @@ section.portfolio .flex{
 
 .img-port{
     width: 360px;
-    height: 460px;
+    height: 380px;
     background-color: aqua;
     background-size: cover;
-    background-position: 100% 0px;
+    background-position: 100% 10px;
     border-radius: 30px;
     position: relative;
 }
